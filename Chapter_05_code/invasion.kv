@@ -1,0 +1,30 @@
+# File name: invasion.kv
+#:kivy 1.7.0
+<Invasion>:
+    id: _invasion
+    shooter: _shooter
+    fleet: _fleet
+    AnchorLayout:
+        anchor_y: 'top'
+        anchor_x: 'center'
+        FloatLayout:
+            id: _enemy_area
+            size_hint: 1, .7
+            Fleet:
+                id: _fleet
+                invasion: _invasion
+                shooter: _shooter
+                cols: 8
+                spacing: 40
+                size_hint: .5, .4
+                pos_hint: {'top': .9}
+                x: root.width/2-root.width/4
+    AnchorLayout:
+        anchor_y: 'bottom'
+        anchor_x: 'center'
+        FloatLayout:
+            size_hint: 1, .3
+            Shooter:
+                id: _shooter
+                invasion: _invasion
+                enemy_area: _enemy_area

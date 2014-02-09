@@ -1,0 +1,27 @@
+# File name: drawing.kv (Images and colors)
+#:kivy 1.7.0
+<DrawingSpace>:
+    canvas:
+        Ellipse:
+            pos: 10,10
+            size: 80,80
+            source: 'kivy.png'
+        Rectangle:
+            pos: 110,10
+            size: 80,80
+            source: 'kivy.png'
+        Color: 
+            rgba: 0,0,1,.75
+        Line:
+            points: 10,10,390,10
+            width: 10
+            cap: 'square'
+        Color: 
+            rgba: 0,1,0,1
+        Rectangle:
+            pos: 210,10
+            size: 80,80
+            source: 'kivy.png'
+        Rectangle:
+            pos: 310,10
+            size: 80,80

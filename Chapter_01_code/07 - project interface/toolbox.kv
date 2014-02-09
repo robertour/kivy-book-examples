@@ -1,0 +1,16 @@
+# File name: toolbox.kv
+#:kivy 1.7.0
+<ToolButton@ToggleButton>:
+    size_hint: None,None
+    size: 48,48
+    group: 'tool'
+
+<ToolBox@GridLayout>:
+    cols: 2
+    padding: 2
+    ToolButton:
+        text: 'O'
+    ToolButton:
+        text: '/'
+    ToolButton:
+        text: '?'

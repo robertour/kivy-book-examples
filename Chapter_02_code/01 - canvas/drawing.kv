@@ -1,0 +1,38 @@
+# File name: drawing.kv (vertex instructions)
+#:kivy 1.7.0
+<DrawingSpace>:
+    canvas:
+        Rectangle:
+            pos: self.x+10,self.top-80
+            size: self.width*0.15, self.height*0.3
+        Ellipse:
+            angle_start: 120
+            angle_end: 420
+            pos: 110, 110
+            size: 80,80
+        Ellipse:
+            segments: 3
+            pos: 210,110
+            size: 60,80
+        Triangle:
+            points: 310,110,340,190,380,130
+        Quad:
+            points: 410,110,430,180,470,190,490,120
+        Line:
+            points: 10,30, 90,90, 90,10, 10,60
+        Point:
+            points: 110,30, 190,90, 190,10, 110,60
+            pointsize: 3
+        Bezier:
+            points: 210,30, 290,90, 290,10, 210,60
+            segments: 360
+            dash_length: 10
+            dash_offset: 5
+        Mesh:
+            mode: 'triangle_fan'
+            vertices: 310,30,0,0, 390,90,0,0, 390,10,0,0, 310,60,0,0
+            indices: 0,1,2,3
+        Mesh:
+            mode: 'triangle_fan'
+            vertices: 430,90,0,0, 470,90,0,0, 490,70,0,0, 450,10,0,0, 410,70,0,0,
+            indices: 0,1,2,3,4

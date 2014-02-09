@@ -1,0 +1,25 @@
+# File name: comicwidgets.kv
+#:kivy 1.7.0
+<StickMan@RelativeLayout>:
+    size_hint: None, None
+    size: 48,48
+    canvas:
+        PushMatrix
+        Line:
+            circle: 24,38,5
+        Line:
+            points: 24,33,24,15
+        Line:
+            points: 14,5,24,15
+        Line:
+            points: 34,5,24,15
+        Translate:
+            y: 48-8
+        Rotate:
+            angle: 180
+            axis: 1,0,0
+        Line:
+            points: 14,5,24,15
+        Line:
+            points: 34,5,24,15
+        PopMatrix

@@ -1,0 +1,11 @@
+# File name: statusbar.kv
+#:kivy 1.7.0
+#:import statusbar statusbar
+<StatusBar>:
+    msg_text: _msg_label.text
+    orientation: 'horizontal'
+    Label:
+        text: 'Total Figures: ' + str(root.counter)
+    Label:
+        id: _msg_label
+        text: "Kivy started"

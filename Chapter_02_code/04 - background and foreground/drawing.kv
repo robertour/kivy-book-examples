@@ -1,0 +1,24 @@
+# File name: drawing.kv (Before and After Canvas)
+<DrawingSpace>:
+    canvas.before:
+        Color: 
+            rgba: 1,0,0,1
+        Rectangle:
+            pos: 0,0
+            size: 100,100
+    canvas:
+        Color: 
+            rgba: 0,1,0,1
+        Rectangle:
+            pos: 100,0
+            size: 100,100
+    canvas.after:
+        Color: 
+            rgba: 0,0,1,1
+        Rectangle:
+            pos: 200,0
+            size: 100,100
+    Button:
+        text: 'A very very very long button'
+        pos_hint: {'center_x': .5, 'center_y': .5}
+        size_hint: .9,.1

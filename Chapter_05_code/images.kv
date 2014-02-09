@@ -1,0 +1,27 @@
+# File name: images.kv
+#:kivy 1.7.0
+<Invader@Image>:
+    source: 'atlas://img/invasion/invader'
+    size_hint: None,None
+    size: 40,40
+
+<Shooter@Image>:
+    source: 'atlas://img/invasion/shooter'
+    size_hint: None,None
+    size: 40,40
+    pos: self.parent.width/2, 0
+
+<Boom@Image>:
+    source: 'atlas://img/invasion/boom'
+    size_hint: None,None
+    size: 26,30
+
+<Shot@Ammo>:
+    source: 'atlas://img/invasion/shot'
+    size_hint: None,None
+    size: 12,15
+
+<Missile@Ammo>:
+    source: 'atlas://img/invasion/missile'
+    size_hint: None,None
+    size: 12,27

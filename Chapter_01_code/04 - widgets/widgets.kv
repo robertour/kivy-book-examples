@@ -1,0 +1,15 @@
+# File name: widgets2.kv
+#:kivy 1.7.0
+
+<MyButton@Button>:
+    color: .8,.9,0,1
+    font_size: 32
+    size: 100, 50
+
+<MyWidget>:
+    MyButton:
+        text: 'Hello'
+        pos: root.x, root.top - self.height
+    MyButton:
+        text: 'World!'
+        pos: root.right - self.width, root.y

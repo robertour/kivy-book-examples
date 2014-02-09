@@ -1,0 +1,34 @@
+# File name: toolbox.kv
+#:kivy 1.7.0
+#:import toolbox toolbox
+<ToolButton>:
+    size_hint: None,None
+    size: 48,48
+    group: 'tool'
+    canvas:
+        PushMatrix:
+        Translate:
+            xy: self.x,self.y
+    canvas.after:
+        PopMatrix:
+
+<ToolBox@GridLayout>:
+    cols: 2
+    padding: 2
+    tool_circle: _tool_circle
+    tool_line: _tool_line
+    tool_stickman: _tool_stickman
+    ToolCircle:
+        id:  _tool_circle
+        canvas:
+            Line:
+                circle: 24,24,14
+    ToolLine:
+        id: _tool_line
+        canvas:
+            Line:
+                points: 10,10,38,38
+    ToolStickman:
+        id: _tool_stickman
+        StickMan:
+            pos_hint: {'center_x':.5,'center_y':.5}
