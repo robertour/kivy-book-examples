@@ -16,6 +16,7 @@ I extracted 'Kivy- Interactive Applications in Python.zip' and renamed the direc
 The package contained no copyright or license notices.
 
 ## Included examples
+
 ### Chapter 1: GUI Basics – Building an Interface
  * Chapter_01_code/01 - hello
  * Chapter_01_code/02 - hello2
@@ -24,6 +25,7 @@ The package contained no copyright or license notices.
  * Chapter_01_code/05- layouts
  * Chapter_01_code/06 - embebbed layout
  * Chapter_01_code/07 - project interface
+
 ### Chapter 2: Graphics – The Canvas
  * Chapter_02_code/01 - canvas
  * Chapter_02_code/02 - lines
@@ -31,7 +33,9 @@ The package contained no copyright or license notices.
  * Chapter_02_code/04 - background and foreground
  * Chapter_02_code/05 - transformations
  * Chapter_02_code/06 - project
+
 ### Chapter 3: Widget Events – Binding Actions
+
 ### Chapter 4: Improving the User Experience
  * Chapter_04_code/01 - Screen Manager - Adding Color to our Figures
  * Chapter_04_code/02 - Color Control on the canvas - Coloring Figures
@@ -40,6 +44,7 @@ The package contained no copyright or license notices.
  * Chapter_04_code/05 - Scatter - Multi-touching to Drag, Rotate and Scale
  * Chapter_04_code/06 - Recording Gestures - Line, Circles and Cross
  * Chapter_04_code/07 - Simple Gestures - Drawing with the Finger
+
 ### Chapter 5: Invaders Revenge – An Interactive Multitouch Game
 
 
