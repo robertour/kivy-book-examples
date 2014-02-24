@@ -47,6 +47,7 @@ The package contained no copyright or license notices.
 
 ### Chapter 5: Invaders Revenge – An Interactive Multitouch Game
 
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/notpeter/kivy-book-examples/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
    [1]: http://www.amazon.com/exec/obidos/ISBN/1783281596/prod-detail-20/
    [2]: http://www.packtpub.com/kivy-interactive-applications-in-python/book
